@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<div id="work-camera" class="text-center">
+    <div class="overlay">
+        <!--
+        <div class="container">
+        </div>
+-->
+        <div class="slider-container">
+            <div class="section-title center pos-absolute">
+                <h2>
+                    <span th:text="#{camera.working} + ' '"></span>
+                    <strong th:text="#{process}">process</strong></h2>
+                <div class="line"></div>
+            </div>
+            <div class="slider-control left inactive"></div>
+            <div class="slider-control right"></div>
+            <ul class="slider-pagi"></ul>
+            <div class="slider">
+                <div class="slide slide-0 active">
+                    <div class="slide__bg"></div>
+                    <div class="slide__content">
+                        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405"></path>
+                        </svg>
+                        <div class="slide__text">
+                            <h2 class="slide__text-heading" th:text="#{ai.camera}"></h2>
+                            <p class="slide__text-desc" th:text="#{about.camera1}"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-1">
+                    <div class="slide__bg"></div>
+                    <div class="slide__content">
+                        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405"></path>
+                        </svg>
+                        <div class="slide__text">
+                            <h2 class="slide__text-heading" th:text="#{ai.camera}"></h2>
+                            <p class="slide__text-desc" th:text="#{about.camera2}"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#home">AGRIN-X</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home" class="page-scroll"><span th:text="#{head.home}"></span></a></li>
+                <li><a href="#about" class="page-scroll"><span th:text="#{head.about}"></span></a></li>
+                <li><a href="#work-process" class="page-scroll"><span th:text="#{head.process}"></span></a></li>
+                <li><a href="#camera" class="page-scroll"><span th:text="#{head.product}"></span></a></li>
+                <li><a href="#program" class="page-scroll"><span th:text="#{head.program}"></span></a></li>
+                <li><a href="#tf-contact" class="page-scroll"><span th:text="#{head.contact}"></span></a></li>
+                <li><a href="?language=zh_CN"><img th:src="@{/resources/img/china (2).png}"></a></li>
+                <li><a href="?language=en_US"><img th:src="@{/resources/img/united-kingdom (3).png}"></a></li>
+            </ul>
+
+
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+</html>

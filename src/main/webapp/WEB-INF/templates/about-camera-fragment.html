@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<div id="camera" class="text-center">
+    <div class="container">
+        <div class="section-title center">
+            <h2>
+                <span th:text="#{monitoring.system} + ' '"></span>
+                <strong th:text="#{monitoring.system.powered}"></strong>
+            </h2>
+            <div class="line">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img th:src="@{/resources/img/PROD1.png}" class="img-responsive">
+            </div>
+            <div class="about-text">
+                <div class="col-md-6">
+                    <p class="intro">
+                        <span th:text="#{we.created} + ' '"></span>
+                        <strong th:text="#{smart.device}"></strong>
+                        <span th:text="' ' + #{about.monitoring.system}"></span>
+                    </p>
+
+                    <ul class="about-list">
+                        <li>
+                            <span class="fa fa-dot-circle-o"></span>
+                            <strong th:text="#{soil.monitoring.box}"></strong>
+                            <span th:text="' - ' + #{about.soil.monitoring.box}"></span>
+                        </li>
+                        <li>
+                            <span class="fa fa-dot-circle-o"></span>
+                            <strong th:text="#{stevenson.screen}"></strong>
+                            <span th:text="' - ' + #{about.stevenson.screen}"></span>
+                        </li>
+                        <li>
+                            <span class="fa fa-dot-circle-o"></span>
+                            <strong th:text="#{anemometer}"></strong>
+                            <span th:text="' - ' + #{about.anemometer}"></span>
+                        </li>
+
+                        <li>
+                            <span class="fa fa-dot-circle-o"></span>
+                            <strong th:text="#{smart.cam}"></strong>
+                            <span th:text="' - ' + #{about.smart.cam}"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

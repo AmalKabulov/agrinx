@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+<div id="program" class="text-center">
+    <div class="container">
+        <div class="section-title center">
+            <h2>
+                <span th:text="#{about} + ' '"></span>
+                <strong th:text="#{program}"></strong>
+            </h2>
+            <div class="line">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="about-text">
+                <div class="col-md-6">
+                    <p class="intro">
+                        <span th:text="#{the.program} + ' '"></span>
+                        <strong th:text="#{analyzes} + ' '"></strong>
+                        <span th:text="#{about.program1} + ' '"></span>
+                        <strong th:text="#{offers} + ' '"></strong>
+                        <span th:text="#{about.program2} + ' '"></span>
+                        <strong th:text="#{find.out} + ' '"></strong>
+                        <span th:text="#{about.program3} + ' '"></span>
+                        <strong th:text="#{protect.your.health} + ' '"></strong>
+                        <span th:text="#{about.program4}"></span>
+                    </p>
+                    <p class="intro"><strong th:text="#{program.support}"></strong></p>
+                </div>
+                <div class="col-md-6">
+                    <img th:src="@{/resources/img/program_1.png}" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

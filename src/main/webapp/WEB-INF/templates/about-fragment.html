@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="about-text">
+                    <div class="section-title">
+                        <h4><strong th:text="#{about.us}"></strong></h4>
+                        <!--                            <h2>Some words <strong>about us</strong></h2>-->
+                        <hr>
+                        <div class="clearfix"></div>
+                    </div>
+                    <p class="intro">
+                        <strong class="color" th:text="#{agrinx} + ' '"></strong>
+                        <span th:text="#{about.agrinx1}"></span>
+                        <strong th:text="' ' + #{improve.quality} + ' '"></strong>
+                        <span th:text="#{about.agrinx2}"></span>
+                        <strong th:text="#{reduce}"></strong>
+                        <span th:text="#{about.agrinx3}"></span>
+                    </p>
+
+                    <p class="intro"><strong th:text="#{our.product.help.head}"></strong></p>
+
+
+                    <ul class="about-list">
+                        <li>
+                            <span class="fa fa-dot-circle-o"></span>
+                            <span th:text="#{product.help1}"></span>
+                        </li>
+                        <li>
+                            <span class="fa fa-dot-circle-o"></span>
+                            <span th:text="#{product.help2}"></span>
+                        </li>
+                        <li>
+                            <span class="fa fa-dot-circle-o"></span>
+                            <span th:text="#{product.help3}"></span>
+                        </li>
+                        <li>
+                            <span class="fa fa-dot-circle-o"></span>
+                            <span th:text="#{product.help4}"></span>
+                        </li>
+                        <li>
+                            <span class="fa fa-dot-circle-o"></span>
+                            <span th:text="#{product.help5}"></span>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="section-title">
+                    <h4><strong th:text="#{we.can.save.head}"></strong></h4>
+                    <hr>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 margin">
+                        <div class="hero-widget">
+                            <div class="icon">
+                                <img th:src="@{/resources/img/drop.png}">
+                            </div>
+                            <div class="text">
+                                <var>15%</var>
+                                <label class="text-muted" th:text="#{water}"></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 margin">
+                        <div class="hero-widget">
+                            <div class="icon">
+                                <img th:src="@{/resources/img/seeding.png}">
+                            </div>
+                            <div class="text">
+                                <var>20%</var>
+                                <label class="text-muted" th:text="#{seeds}"></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 margin">
+                        <div class="hero-widget">
+                            <div class="icon">
+                                <img th:src="@{/resources/img/fertilizer.png}">
+                            </div>
+                            <div class="text">
+                                <var>20%</var>
+                                <label class="text-muted" th:text="#{fertilizers}"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</html>

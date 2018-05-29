@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <!--[if IE]>
+    <meta http-equiv="x-ua-compatible" content="IE=9"/><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AGRIN-X</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" th:href="@{/resources/css/bootstrap.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/resources/fonts/font-awesome/css/font-awesome.css}">
+
+    <!-- Slider -->
+    <link th:href="@{/resources/css/owl.carousel.css}" rel="stylesheet" media="screen">
+    <link th:href="@{/resources/css/owl.theme.css}" rel="stylesheet" media="screen">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" th:href="@{/resources/css/style.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/resources/css/responsive.css}">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400'
+          rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" th:src="@{/resources/js/modernizr.custom.js}"></script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!-- Navigation==========================================-->
+<div th:replace="~{menu-fragment :: #tf-menu}"></div>
+
+<!-- Home Page==========================================-->
+<div th:replace="~{home-fragment :: #home}"></div>
+
+<!-- About Us Page==========================================-->
+<div th:replace="~{about-fragment :: #about}"></div>
+
+<!-- About working process==========================================-->
+<div th:replace="~{working-process-fragment :: #work-process}"></div>
+
+<!-- About camera ==========================================-->
+<div th:replace="~{about-camera-fragment :: #camera}"></div>
+
+<!-- About working camera ==========================================-->
+<div th:replace="~{camera-processing-fragment :: #work-camera}"></div>
+
+<!-- About program==========================================-->
+<div th:replace="~{about-program-fragment :: #program}"></div>
+
+<!-- QR AND blockchain ==========================================-->
+<div th:replace="~{qr-blockchain-fragment :: #tf-testimonials}"></div>
+
+<!-- Contact us ==========================================-->
+<div th:replace="~{contact-us-fragment :: #tf-contact}"></div>
+
+<div th:replace="~{footer-fragment :: #footer}"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" th:src="@{/resources/js/jquery.1.11.1.js}"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" th:src="@{/resources/js/bootstrap.js}"></script>
+<script type="text/javascript" th:src="@{/resources/js/SmoothScroll.js}"></script>
+<script type="text/javascript" th:src="@{/resources/js/jquery.isotope.js}"></script>
+
+<script type="text/javascript" th:src="@{/resources/js/owl.carousel.js}"></script>
+<script type="text/javascript" th:src="@{/resources/js/mail.sender.js}"></script>
+<script type="text/javascript" th:src="@{/resources/js/main.js}"></script>
+
+</body>
+
+</html>
